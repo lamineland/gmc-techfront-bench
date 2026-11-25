@@ -1,0 +1,582 @@
+{
+  "date": "2026-11-25T10:55:25.019Z",
+  "environment": {
+    "chrome": "Chrome/156.0.8078.47",
+    "node": "v24.22.1",
+    "os": "Linux 6.12.113+ (x64)",
+    "cpu": "Intel(R) Xeon(R) Processor",
+    "cpus": 8,
+    "runs": 5,
+    "warmup": 1,
+    "headless": true,
+    "cpuThrottling": "none"
+  },
+  "versions": {
+    "react": "19.3.1",
+    "angular": "22.3.0",
+    "vue": "3.5.46",
+    "svelte": "5.59.1"
+  },
+  "frameworks": {
+    "react": {
+      "bundle": {
+        "rawKB": 220.38,
+        "gzipKB": 68.28
+      },
+      "scenarios": {
+        "render100": {
+          "label": "Render 100",
+          "totalMs": {
+            "median": 23.6,
+            "min": 21.9,
+            "max": 25.6,
+            "runs": [
+              23.7,
+              23.6,
+              25.6,
+              22.7,
+              21.9
+            ]
+          },
+          "scriptMs": {
+            "median": 4.4,
+            "runs": [
+              4.2,
+              4.4,
+              4.3,
+              4.5,
+              4.4
+            ]
+          }
+        },
+        "render500": {
+          "label": "Render 500",
+          "totalMs": {
+            "median": 34.4,
+            "min": 33.4,
+            "max": 37.1,
+            "runs": [
+              33.4,
+              34.9,
+              34.4,
+              33.8,
+              37.1
+            ]
+          },
+          "scriptMs": {
+            "median": 16.4,
+            "runs": [
+              14,
+              15,
+              16.4,
+              16.4,
+              18.9
+            ]
+          }
+        },
+        "render1000": {
+          "label": "Render 1000",
+          "totalMs": {
+            "median": 57.1,
+            "min": 52,
+            "max": 64.3,
+            "runs": [
+              52,
+              57.1,
+              61.1,
+              64.3,
+              56.2
+            ]
+          },
+          "scriptMs": {
+            "median": 22.2,
+            "runs": [
+              19.4,
+              22.6,
+              22.2,
+              21.2,
+              22.3
+            ]
+          }
+        },
+        "update50": {
+          "label": "Update 50 (of 1000)",
+          "totalMs": {
+            "median": 11,
+            "min": 9.3,
+            "max": 21.6,
+            "runs": [
+              21.6,
+              16.6,
+              11,
+              9.3,
+              10.2
+            ]
+          },
+          "scriptMs": {
+            "median": 3.4,
+            "runs": [
+              3.1,
+              2.6,
+              3.4,
+              4.1,
+              4.6
+            ]
+          }
+        },
+        "delete50": {
+          "label": "Delete 50 (of 1000)",
+          "totalMs": {
+            "median": 14.6,
+            "min": 10.9,
+            "max": 19.2,
+            "runs": [
+              10.9,
+              15.9,
+              19.2,
+              11.7,
+              14.6
+            ]
+          },
+          "scriptMs": {
+            "median": 3.3,
+            "runs": [
+              3.5,
+              2.8,
+              2.7,
+              3.3,
+              3.5
+            ]
+          }
+        }
+      },
+      "memory": {
+        "emptyMB": 1.22,
+        "with1000MB": 3.15,
+        "deltaMB": 1.93,
+        "perfMemoryEmptyMB": 1.44,
+        "perfMemoryWith1000MB": 3.38
+      }
+    },
+    "angular": {
+      "bundle": {
+        "rawKB": 197.26,
+        "gzipKB": 61.11
+      },
+      "scenarios": {
+        "render100": {
+          "label": "Render 100",
+          "totalMs": {
+            "median": 22.8,
+            "min": 20.1,
+            "max": 24.9,
+            "runs": [
+              24.1,
+              20.1,
+              24.9,
+              20.9,
+              22.8
+            ]
+          },
+          "scriptMs": {
+            "median": 10.7,
+            "runs": [
+              12.7,
+              8.7,
+              18,
+              10.7,
+              9.3
+            ]
+          }
+        },
+        "render500": {
+          "label": "Render 500",
+          "totalMs": {
+            "median": 48.4,
+            "min": 44.8,
+            "max": 54.6,
+            "runs": [
+              54.6,
+              44.8,
+              49,
+              45.2,
+              48.4
+            ]
+          },
+          "scriptMs": {
+            "median": 27.1,
+            "runs": [
+              32.6,
+              26.1,
+              27.3,
+              24.3,
+              27.1
+            ]
+          }
+        },
+        "render1000": {
+          "label": "Render 1000",
+          "totalMs": {
+            "median": 80,
+            "min": 74.7,
+            "max": 95.5,
+            "runs": [
+              83.2,
+              80,
+              78.6,
+              95.5,
+              74.7
+            ]
+          },
+          "scriptMs": {
+            "median": 42.8,
+            "runs": [
+              42.8,
+              43,
+              38.6,
+              46.1,
+              39.3
+            ]
+          }
+        },
+        "update50": {
+          "label": "Update 50 (of 1000)",
+          "totalMs": {
+            "median": 14.1,
+            "min": 10.5,
+            "max": 16.3,
+            "runs": [
+              14.1,
+              10.5,
+              11.4,
+              16.3,
+              15.1
+            ]
+          },
+          "scriptMs": {
+            "median": 1.7,
+            "runs": [
+              1.5,
+              2.6,
+              2.2,
+              1.7,
+              1.7
+            ]
+          }
+        },
+        "delete50": {
+          "label": "Delete 50 (of 1000)",
+          "totalMs": {
+            "median": 11.5,
+            "min": 8.1,
+            "max": 13.8,
+            "runs": [
+              11.5,
+              9,
+              13.8,
+              12.8,
+              8.1
+            ]
+          },
+          "scriptMs": {
+            "median": 2.6,
+            "runs": [
+              3.2,
+              2.6,
+              2.6,
+              2.6,
+              3.1
+            ]
+          }
+        }
+      },
+      "memory": {
+        "emptyMB": 1.83,
+        "with1000MB": 5.61,
+        "deltaMB": 3.78,
+        "perfMemoryEmptyMB": 2.03,
+        "perfMemoryWith1000MB": 5.83
+      }
+    },
+    "vue": {
+      "bundle": {
+        "rawKB": 71.8,
+        "gzipKB": 27.87
+      },
+      "scenarios": {
+        "render100": {
+          "label": "Render 100",
+          "totalMs": {
+            "median": 23.2,
+            "min": 18.8,
+            "max": 24.3,
+            "runs": [
+              24.3,
+              18.8,
+              22.4,
+              23.2,
+              23.2
+            ]
+          },
+          "scriptMs": {
+            "median": 5.4,
+            "runs": [
+              5.5,
+              5.9,
+              4.8,
+              5.4,
+              5.3
+            ]
+          }
+        },
+        "render500": {
+          "label": "Render 500",
+          "totalMs": {
+            "median": 37.1,
+            "min": 35.2,
+            "max": 41.2,
+            "runs": [
+              35.2,
+              40,
+              41.2,
+              37.1,
+              37
+            ]
+          },
+          "scriptMs": {
+            "median": 19.7,
+            "runs": [
+              17.6,
+              20.6,
+              20.6,
+              18.5,
+              19.7
+            ]
+          }
+        },
+        "render1000": {
+          "label": "Render 1000",
+          "totalMs": {
+            "median": 63.3,
+            "min": 56.5,
+            "max": 140.3,
+            "runs": [
+              58,
+              66.2,
+              140.3,
+              63.3,
+              56.5
+            ]
+          },
+          "scriptMs": {
+            "median": 25.8,
+            "runs": [
+              25.8,
+              31.9,
+              72.4,
+              24.4,
+              24.6
+            ]
+          }
+        },
+        "update50": {
+          "label": "Update 50 (of 1000)",
+          "totalMs": {
+            "median": 9.3,
+            "min": 7.4,
+            "max": 13.6,
+            "runs": [
+              13.6,
+              7.4,
+              9.3,
+              11.1,
+              8.6
+            ]
+          },
+          "scriptMs": {
+            "median": 3.8,
+            "runs": [
+              3.7,
+              3.9,
+              3.8,
+              4.9,
+              3.8
+            ]
+          }
+        },
+        "delete50": {
+          "label": "Delete 50 (of 1000)",
+          "totalMs": {
+            "median": 11.9,
+            "min": 8.5,
+            "max": 16.6,
+            "runs": [
+              8.5,
+              12.9,
+              11.5,
+              16.6,
+              11.9
+            ]
+          },
+          "scriptMs": {
+            "median": 3.6,
+            "runs": [
+              3.7,
+              3.6,
+              3.2,
+              3.1,
+              4.9
+            ]
+          }
+        }
+      },
+      "memory": {
+        "emptyMB": 1.02,
+        "with1000MB": 4.92,
+        "deltaMB": 3.9,
+        "perfMemoryEmptyMB": 1.1,
+        "perfMemoryWith1000MB": 5.01
+      }
+    },
+    "svelte": {
+      "bundle": {
+        "rawKB": 55.31,
+        "gzipKB": 21.21
+      },
+      "scenarios": {
+        "render100": {
+          "label": "Render 100",
+          "totalMs": {
+            "median": 23.1,
+            "min": 23,
+            "max": 23.9,
+            "runs": [
+              23.3,
+              23,
+              23.1,
+              23.9,
+              23
+            ]
+          },
+          "scriptMs": {
+            "median": 7.5,
+            "runs": [
+              11,
+              6.1,
+              7.5,
+              6.5,
+              9.7
+            ]
+          }
+        },
+        "render500": {
+          "label": "Render 500",
+          "totalMs": {
+            "median": 44.6,
+            "min": 40.1,
+            "max": 63.1,
+            "runs": [
+              40.1,
+              42.1,
+              49.3,
+              63.1,
+              44.6
+            ]
+          },
+          "scriptMs": {
+            "median": 23.1,
+            "runs": [
+              22.3,
+              23.1,
+              23.1,
+              29.5,
+              25.7
+            ]
+          }
+        },
+        "render1000": {
+          "label": "Render 1000",
+          "totalMs": {
+            "median": 81.8,
+            "min": 62.2,
+            "max": 85.9,
+            "runs": [
+              83.3,
+              85.9,
+              62.2,
+              68.7,
+              81.8
+            ]
+          },
+          "scriptMs": {
+            "median": 37.2,
+            "runs": [
+              43.9,
+              41.3,
+              31.1,
+              36.5,
+              37.2
+            ]
+          }
+        },
+        "update50": {
+          "label": "Update 50 (of 1000)",
+          "totalMs": {
+            "median": 17.1,
+            "min": 14.6,
+            "max": 20.7,
+            "runs": [
+              14.6,
+              17.1,
+              16.4,
+              20.7,
+              20.3
+            ]
+          },
+          "scriptMs": {
+            "median": 4.9,
+            "runs": [
+              8.2,
+              5,
+              3.6,
+              3.7,
+              4.9
+            ]
+          }
+        },
+        "delete50": {
+          "label": "Delete 50 (of 1000)",
+          "totalMs": {
+            "median": 20,
+            "min": 17.9,
+            "max": 21.4,
+            "runs": [
+              18.4,
+              20.4,
+              17.9,
+              20,
+              21.4
+            ]
+          },
+          "scriptMs": {
+            "median": 3.7,
+            "runs": [
+              5.1,
+              3.7,
+              3.4,
+              3.7,
+              3.8
+            ]
+          }
+        }
+      },
+      "memory": {
+        "emptyMB": 0.95,
+        "with1000MB": 4.93,
+        "deltaMB": 3.98,
+        "perfMemoryEmptyMB": 1.01,
+        "perfMemoryWith1000MB": 5.01
+      }
+    }
+  }
+}

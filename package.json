@@ -1,0 +1,28 @@
+{
+  "name": "gmc-front-bench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Benchmark of React, Angular, Vue and Svelte on DOM manipulation with the same to-do app.",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "build:react": "npm run build -w apps/react",
+    "build:angular": "npm run build -w apps/angular",
+    "build:vue": "npm run build -w apps/vue",
+    "build:svelte": "npm run build -w apps/svelte",
+    "bench": "node bench/run.mjs",
+    "bench:quick": "node bench/run.mjs --runs 3",
+    "serve": "node bench/serve.mjs",
+    "test:smoke": "node bench/smoke.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.18.1"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}
